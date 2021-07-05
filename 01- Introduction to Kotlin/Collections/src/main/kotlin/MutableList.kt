@@ -11,6 +11,12 @@ fun main() {
     names.set(0, "Michael")
     names[1] = "James"
     println(names) //[Michael, James]
+
+    // Iterate through a List
+    for(i in names) {
+        println(i)
+    }
+
     names.clear()
     println(names) //[]
 }

@@ -6,4 +6,9 @@ fun main() {
     println(names) //[John, Mark, Finn, Sarah]
     names.remove("Sarah")
     println(names) //[John, Mark, Finn]
+
+    // Iterate through a Set
+    for(item in names) {
+        println(item)
+    }
 }
