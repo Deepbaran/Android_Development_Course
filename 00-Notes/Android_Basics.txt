@@ -25,7 +25,25 @@ Criterias for choosing the API level for Android App:
 1. Availability and support for the feature that we need for our app.
 2. Number of users that we are targeting using our app.
 
+
+++++++++++++++++++++
+Layouts:
+++++++++++++++++++++
+
+
 ++++++++++++++++++++
 Notes:
 ++++++++++++++++++++
-- Activity: Activities are the screens that our users see. Each screen is a individual activity.
+- Activity: Activities are the screens that our users see. Each screen is an individual activity.
+
+- Module: It is a group of files which function as independent unit or in simple terms we can say that, we can compile or build a module to create an app. A project can have multiple modules and they can communicate with each otehr.
+
+========
+Density:
+========
+- Screen density means how many pixels appear within a constant area of the display, dots per inch = dpi
+- Screen size means amount of physical space available for displaying an interface, screen's diagonal, inch
+- Screen resolution means number of pixels available in the display, scale-independent pixel = sp
+- density-independent pixel = virtual pixel that is independent of the screen density, dp
+
+

@@ -1,10 +1,76 @@
 ++++++++++++++++++++++++++
-Project Directory:
+Menu Bar:
+++++++++++++++++++++++++++
+========
+File:
+========
+- Here we can create, open or close a project. etc.
+
+========
+Code:
+========
+- Here we can Reformat code (Ctrl + Alt + L)
+
+========
+Analyze:
+========
+- Inspect Code: Before publishing the app, it is best that we first inspect the code so that it can tell us what we can optimize in the code.
+
+========
+Build:
+========
+- here we build the project.
+
+========
+Run:
+========
+- It is used to run our app.
+
+========
+Tools:
+========
+- It is used for AVD Manager.
+
+========
+VCS:
+========
+- It is used for Version Control.
+
+
+++++++++++++++++++++++++++
+Side Tabs:
+++++++++++++++++++++++++++
+========
+Project:
+========
+- It is the most important and most frequently accessed tab as it has all the files of the project.
+
+++++++++++++++++++++++++++
+Bottom Tabs:
+++++++++++++++++++++++++++
+========
+Logcat:
+========
+- It shows all the system logs including the ones from our app.
+- Here we can select the device for which we want to see the log for.
+- We can select the particular process of the device that we wamt to see the log for.
+- We can also select the logs according to their levels (Verbose, Debug, Info, Warn, Error, Assert).
+- We can also filter the logs using Regex.
+- We can also further filter our logs.
+- Logcat is very important for debugging our app and looking out for Exceptions.
+
+
+++++++++++++++++++++++++++
+Project Directory (Android):
 ++++++++++++++++++++++++++
 ================
-app:
+app (module):
 ================
+- This is default module.
+- Whenever we create a new project, a default mpdule is created which is app by Android studio.
+- Module is a independent file or a group of unit or we can say in simple terms, that we can compile or build a module to create an app.
 - This directory holds all the files and folders that make up our app.
+- A Project can have multiple modules and they can communicate with each other.
 
 ----------------
 manifests:
@@ -12,17 +78,32 @@ manifests:
 * AndroidManifest.xml:
 - This file contains some basic details about our app. Such as, icon, label (App name), app theme, etc.
 - This file is the main file of the Android.
+- It contains all the information about our app that we want to convey to the system, so that system can have information about our app.
+- If we want some access related permission that we need to take from the system or any system related resources are here.
+- All the activities should also be entered in here, so that system knows about these activities.
 
 ----------------
-res:
+res ("@typeofresource/nameofresource"):
 ----------------
 - res is short for "resources". This is where we will put icons, images, music, etc that our app needs.
+
+drawable:
+-----------
+- It contains all the images and vectors which we use in the project.
 
 layout:
 ----------------
 * activity_main.xml:
 - This is where we will see what our app looks like.
 - This XML defines the layout and the look of our activity.
+
+minmap:
+--------
+- This is where the icons are reside for the app.
+
+values:
+--------
+- In android, if we have any hardcoded values, we generally take it out of the code itself (specifically) if it is going to be used at multiple places)and we put it in the values folder for future use.
 
 ----------------
 java:
@@ -34,6 +115,20 @@ java:
 Gradle Scripts:
 ================
 - Gradle is a open source build tool. Android studio uses gradle to build our app from the app directory.
+
+* build.gradle (Project):
+- It applies to the whole project.
+- The depndencies in gradle(Project) and gradle(Module) are downloaded from google() and mavenCentral() repositories.
+
+* build.gradle (Module):
+- It applies to a particular module.
+- Gradle does not know about android or kotlin, so what we do is that we add plugins for android and kotlin in here.
+- applicationId is the unique id that our app will use in the playstore.
+minSdkVersion shows the minimum SDK version that we are bulding this app for.
+- targetSdkVersion (Tells the android system which android version this app is targeting. Keep it as updated as possible) and compiledSdkVersion would be same most of the time.
+- Increase the version code by one after every apk publishing of the app. This is the app version.
+- There are two types of builds. One is "debug build", which we generally use to develop our app. Another is "release build", which is used when we want to publish our app. The advantage of release type is that, it is more optimized while debug build has extra code for debugging and extra features. buildTypes{} define the build type for the app. In release{} we can do some optimizations, for example, we can set minifyEnables as true. It will optimize and minify the code.
+- Add the dependencies under dependencies{} here. Dependencies are extra libraries which our project uses to get extra features.
 
 
 ++++++++++++++++++++++
@@ -58,3 +153,17 @@ Code Snippets:
 MainActivity:
 ============
 - The MainActivity class allows us to work with the activity that we created to remember the screen will display to users.
+- Tis is the default activity.
+- It inherits from the AppCompatActivity() class.
+- To make it default manually (if it is not set by default), in the AndroidManifest.xml file we need to put:
+<activity android:name=".MainActivity">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity>
+
+
++++++++++++++++++++++++
+Shortcuts:
++++++++++++++++++++++++
