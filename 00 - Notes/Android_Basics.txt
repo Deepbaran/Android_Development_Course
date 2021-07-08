@@ -1,1 +1,0 @@
-- Activity: Activities are the screens that our users see. Each screen is a individual activity.
