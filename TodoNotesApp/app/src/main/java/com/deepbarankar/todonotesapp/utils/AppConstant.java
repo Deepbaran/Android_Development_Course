@@ -1,4 +1,4 @@
-package com.deepbarankar.todonotesapp;
+package com.deepbarankar.todonotesapp.utils;
 
 public class AppConstant {
     //Help us from not adding raw string

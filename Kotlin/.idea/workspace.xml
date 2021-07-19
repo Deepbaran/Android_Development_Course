@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="07f1cf73-4377-4abb-8083-7caca55ad9c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/view/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/view/MyNotesActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/AppConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/utils/AppConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/DetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/view/DetailActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/view/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/MyNotesActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/PrefConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/utils/PrefConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/view/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/adapter/NotesAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/adapter/NotesAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/clickListeners/ItemClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/java/com/deepbarankar/todonotesapp/clickListeners/ItemClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/res/layout/activity_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/res/layout/activity_my_notes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/res/layout/activity_my_notes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/res/layout/notes_adapter_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/app/src/main/res/layout/notes_adapter_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoNotesApp/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoNotesApp/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1vRhBGY6chmkyhFykIh4nlzquC7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07f1cf73-4377-4abb-8083-7caca55ad9c7" name="Default Changelist" comment="" />
+      <created>1626530675388</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626530675388</updated>
+    </task>
+    <servers />
+  </component>
+</project>

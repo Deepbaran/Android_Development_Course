@@ -1,8 +1,10 @@
-package com.deepbarankar.todonotesapp;
+package com.deepbarankar.todonotesapp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.deepbarankar.todonotesapp.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,8 +1,11 @@
 package com.deepbarankar.todonotesapp.adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -10,7 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.deepbarankar.todonotesapp.R;
 import com.deepbarankar.todonotesapp.clickListeners.ItemClickListener;
-import com.deepbarankar.todonotesapp.model.Notes;
+import com.deepbarankar.todonotesapp.db.Notes;
+//import com.deepbarankar.todonotesapp.model.Notes;
 
 import java.util.List;
 
@@ -18,6 +22,7 @@ import java.util.List;
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> {
     private List<Notes> listNotes;
     private ItemClickListener itemClickListener;
+    String TAG = "NotesAdapter";
 
     public NotesAdapter(List<Notes> list, ItemClickListener itemClickListener) {
         this.listNotes = list;
@@ -41,6 +46,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
         String description = notes.getDescription();
         holder.textViewTitle.setText(title);
         holder.textViewDescription.setText(description);
+        holder.checkBoxMarkStatus.setChecked(notes.isTaskCompleted());
 
         //We can interact with the items
         //Passing the data from the adapter to the MyNotesActivity
@@ -48,6 +54,14 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
             @Override
             public void onClick(View v) {
                 itemClickListener.onClick(notes);
+            }
+        });
+        holder.checkBoxMarkStatus.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                notes.setTaskCompleted(isChecked);
+//                Log.d(TAG, String.valueOf(isChecked));
+                itemClickListener.onUpdate(notes);
             }
         });
     }
@@ -60,11 +74,13 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
 
     static class ViewHolder extends RecyclerView.ViewHolder{
         TextView textViewTitle, textViewDescription;
+        CheckBox checkBoxMarkStatus;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textViewTitle = itemView.findViewById(R.id.textViewTitle);
             textViewDescription = itemView.findViewById(R.id.textViewDescription);
+            checkBoxMarkStatus = itemView.findViewById(R.id.checkboxMarkStatus);
         }
     }
 }

@@ -1,10 +1,13 @@
-package com.deepbarankar.todonotesapp;
+package com.deepbarankar.todonotesapp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.deepbarankar.todonotesapp.R;
+import com.deepbarankar.todonotesapp.utils.AppConstant;
 
 public class DetailActivity extends AppCompatActivity {
     TextView textViewTitle, textViewDescription;

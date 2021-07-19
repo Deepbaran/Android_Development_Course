@@ -1,10 +1,13 @@
-package com.deepbarankar.todonotesapp;
+package com.deepbarankar.todonotesapp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+
+import com.deepbarankar.todonotesapp.R;
+import com.deepbarankar.todonotesapp.utils.PrefConstant;
 
 public class SplashActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
